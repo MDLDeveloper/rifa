@@ -1,0 +1,31 @@
+body{
+    background-color: #bed3ee;
+}
+
+nav ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    justify-content: end;
+    margin-right: 25px;
+}
+
+.navbtn{
+    text-decoration: none;
+    background-color: rgb(189, 139, 236);
+    border-radius: 10px;
+    color: #020202;
+    padding: 10px;
+    display:block;
+}
+
+.content-rifa
+
+.btn-number{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    background-color: #9fadff;
+}
