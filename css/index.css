@@ -19,13 +19,51 @@ nav ul{
     display:block;
 }
 
-.content-rifa
+.rifa{
+    display: flex;
+    justify-content: center;
+}
+
+.content-rifa{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: center;
+    
+}
 
 .btn-number{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     border: none;
+    margin: 7px;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.available{
     box-shadow: 1px 1px 4px black;
-    background-color: #9fadff;
+    background-color: #98db9b;
+}
+.available:hover{
+    transform:scale(1.15);
+}
+
+.not-available{
+    background-color: #eba1a1;
+}
+
+.reserved{
+    background-color: #9cbdfa;
+}
+
+.selected{
+    box-shadow: 1px 1px 4px black;
+    background-color: rgb(235, 255, 122);
+}
+.selected:hover{
+    transform:scale(1.15);
+
 }
