@@ -1,6 +1,6 @@
 
 const URL_CHARGE_RIFA = "rifas.json"; 
-const URL_SELECTION_RIFA = "change_status.php"
+const URL_SELECTION_RIFA = "back/change_status.php";
 
 const chargeList = () => {
     fetch(URL_CHARGE_RIFA)
@@ -44,5 +44,19 @@ const selectRifa = (btnValue) => {
 }
 
 const sendTheSelection = (btnNumber, stads) => {
-    fetch(URL_SELECTION_RIFA, {})
+    const data = {
+        num: btnNumber,
+        stat: stads
+    };
+    fetch(URL_SELECTION_RIFA, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(result => console.log(result))
+    .catch(error => console.error(error))
 }
+

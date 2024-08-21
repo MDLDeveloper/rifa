@@ -8,27 +8,30 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
+        <img class="logonav" src="/assets/icons/logotaekwondosur.png">
         <ul class="content-nav">
           <li><a href="#home" class="navbtn">Home</a></li>
           <li><a href="#rifa" class="navbtn">Rifa</a></li>
           <li><a href="#premios" class="navbtn">Premios</a></li>
-          <li><a href="#explica" class="navbtn">Como Comprar</a></li>
+          <li><a href="#agradecimiento" class="navbtn">Agradecimiento</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="home" class="home">
         <article>
-          <h1 class="home-title">¡Hola! Somos Martin y Tati</h1>
-          <p class="home-subtitle">Estamos realizando una rifa para participar en el proximo campeonato de TaekWondo.</p>
+          <h1 class="home-title">¡Hola! <br> Somos Martin y Tati</h1>
+          <p class="home-subtitle">Estamos realizando una rifa <strong>para el dia de la madre</strong> para juntar fondos y participar en el proximo campeonato de TaekWondo que se realiza en Agosto.</p>
         </article>
-        <img src="assets/img/martin-tati.jpeg"></im>
+        <img src="assets/img/martin-tati.jpeg">
       </section>
       <section id="rifa" class="rifa">
         <h2>¡Numeros de la rifa!</h2>
+        <p class="infobtn">Los numeros en color <strong class="descbtn" style="background-color: #98db9b;">Verde</strong> estan disponibles para ser comprados, los numeros en <strong class="descbtn" style="background-color: #eba1a1;">Rojo</strong> son los que ya fueron comprados, los que estan en <strong class="descbtn" style="background-color: #9cbdfa;">Celeste</strong> estan selecionados por otra persona y los que estan <strong class="descbtn" style="background-color: #EBFF7A;">Amarillo</strong> son los que usted selecciono.</p>
         <article id="content-rifa" class="content-rifa">
         </article>
+        <button style="margin-top: 40px;" id="btnbuy" class="navbtn">Comprar</button>
       </section>
       <section id="premios" class="premios">
         <h2>¡Estos son los premios!</h2>
@@ -36,13 +39,13 @@
           <img class="imggirf" src="assets/img/fotos-masajes.jpg">
           <div class="textgirf">
             <h3>Primer Premio:</h3>
-            <p></p>
+            <p class="descpremio">Una gift card para una sesión de masajes de cuerpo completo en <strong>Esthetic House</strong>, que incluye descontracturante, relajante, drenaje linfático, y tratamiento con piedras calientes, utilizando siempre los productos de la más alta calidad del mercado.</p>
           </div>
         </article>
-        <article class="gicard">
+        <article class="gicard gc2">
           <div class="textgirf">
             <h3>Segundo Premio:</h3>
-            <p></p>
+            <p class="descpremio">Una gift card para realizar un Esmaltado semipermanente en mano en <strong>Esthetic House</strong>.</p>
           </div>
           <img class="imggirf" src="assets/img/foto-manicuria.webp">
         </article>
@@ -50,13 +53,21 @@
           <img class="imggirf" src="assets/img/premio-sorpresa.jpg">
           <div class="textgirf">
             <h3>Tercer Premio:</h3>
-            <p></p>
+            <p class="descpremio">¡Un super premio sopresa!<br> El mismo se dara a conocer en el momento que se realice el sorteo.</p>
           </div>
         </article>
       </section>
-      <section id="explica" class=""></section>
+      <section id="agradecimiento" class=""></section>
     </main>
-    <footer><p>Diseñado y programado MDLDeveloper</p></footer>
+    <footer>
+      <span>Desarrollado por <a href="https://www.linkedin.com/in/mariodanielledesma">MDLDeveloper</a></span>
+      <div class="iconsdiv">
+      <a href="https://www.linkedin.com/in/mariodanielledesma/" target="_blank"><img class="iconfooter" src="assets/icons/linkedin.svg" alt="Botón de LinkedIn"></a>
+      <a href="https://github.com/MDLDeveloper" target="_blank"><img class="iconfooter" src="assets/icons/github.svg" alt="Botón de GitHub"></a>
+      <a href="mailto:mariodanielledesma91@gmail.com" target="_blank"><img class="iconfooter" src="assets/icons/envelope-at.svg" alt="Botón de Email"></a>
+      <a href="https://wa.me/+5491121853014" target="_blank" ><img class="iconfooter" src="assets/icons/whatsapp.svg" alt="Botón de WhatsApp"></a>
+    </footer>
     <script type="module" src="js/main.js"></script>
+    </div>
   </body>
 </html>
