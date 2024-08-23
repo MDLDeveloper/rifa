@@ -22,6 +22,8 @@ const chargeRifa = (list) => {
             btnNumber.addEventListener('click', ()=> selectRifa(element.num));
         }else if(element.stat === "reserved"){
             btnNumber.classList = "btn-number reserved";
+        }else if(element.stat === "selected"){
+            btnNumber.classList = "btn-number pending";
         }else{
             btnNumber.classList = "btn-number not-available"
         }

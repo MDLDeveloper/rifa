@@ -19,22 +19,63 @@
       </nav>
     </header>
     <main>
+      
       <section id="home" class="home">
         <article>
           <h1 class="home-title">¡Hola! <br> Somos Martin y Tati</h1>
-          <p class="home-subtitle">Estamos realizando una rifa <strong>para el dia de la madre</strong> para juntar fondos y participar en el proximo campeonato de TaekWondo que se realiza en Agosto.</p>
+          <p class="home-subtitle">Estamos realizando una rifa <strong>para el dia de la madre</strong> para juntar fondos y participar en el proximo campeonato de TaekWondo que se realiza en Octubre.</p>
         </article>
         <img src="assets/img/martin-tati.jpeg">
       </section>
+      <!-- Comienzo de Rifa-->
+      
       <section id="rifa" class="rifa">
+        <div id="countdown"></div>
+
+      <script>
+          // Establece la fecha y hora a la que finalizará la cuenta regresiva
+          const endTime = new Date("October 18, 2024 15:00:00").getTime();
+  
+          // Actualiza la cuenta regresiva cada segundo
+          const countdownInterval = setInterval(() => {
+              // Obtiene la fecha y hora actual
+              const now = new Date().getTime();
+              
+              // Calcula la diferencia entre la fecha y hora actuales y la fecha final
+              const timeRemaining = endTime - now;
+  
+              // Calcula los días, horas, minutos y segundos restantes
+              const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+              const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+              const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+              // Muestra la cuenta regresiva en el div con id="countdown"
+              document.getElementById("countdown").innerHTML = 
+                  days + "d - " + 
+                  hours + "h - " + 
+                  minutes + "m - " + 
+                  seconds + "s ";
+  
+              // Si la cuenta regresiva ha terminado, detiene el intervalo y muestra un mensaje
+              if (timeRemaining < 0) {
+                  clearInterval(countdownInterval);
+                  document.getElementById("countdown").innerHTML = "¡La cuenta regresiva ha terminado!";
+              }
+          }, 1000);
+      </script>
         <h2>¡Numeros de la rifa!</h2>
-        <p class="infobtn">Los numeros en color <strong class="descbtn" style="background-color: #98db9b;">Verde</strong> estan disponibles para ser comprados, los numeros en <strong class="descbtn" style="background-color: #eba1a1;">Rojo</strong> son los que ya fueron comprados, los que estan en <strong class="descbtn" style="background-color: #9cbdfa;">Celeste</strong> estan selecionados por otra persona y los que estan <strong class="descbtn" style="background-color: #EBFF7A;">Amarillo</strong> son los que usted selecciono.</p>
+        <p class="infobtn">Los numeros en color <strong class="descbtn" style="background-color: #98db9b;">Verde</strong> estan disponibles para ser comprados, los numeros en <strong class="descbtn" style="background-color: #eba1a1;">Rojo</strong> son los que ya fueron comprados, los que estan en <strong class="descbtn" style="background-color: #9cbdfa;">Celeste</strong> estan selecionados por otra persona (si en 10 minutos no se realizan la reserva volveran a estar disponible), los que estan <strong class="descbtn" style="background-color: #EBFF7A;">Amarillo</strong> son los que usted selecciono y los que estan en <strong class="descbtn" style="background-color: #ac659cb9;">Violeta</strong> son los reservados que se encuentran pendiente a aprobar (si no se verifica la compra de los mismos se vuelven a poner en disponible).</p>
         <article id="content-rifa" class="content-rifa">
         </article>
 
         <button style="margin-top: 40px;" id="btnbuy" class="buybtn">Comprar</button>
       
-      </section>
+        <!-- Fin de Rifa-->
+        <div>
+          <p class="trasnalias">Si no deseas realizar la compra de alguna rifa pero queres ayudar para que Martin y Tati puedan participar del torneo podes realizar una transferencia al siguiente alias: <strong>un.alias.mp</strong></p>
+        </div>
+    </section>
       <section id="premios" class="premios">
         <h2>¡Estos son los premios!</h2>
         <article class="gicard">

@@ -8,7 +8,7 @@ class Rifas {
 
     // Actualiza las rifas cuya selección es mayor a 5 minutos
     public function updateStatusRifa(){
-        $query = "UPDATE rifas SET timeselect = NULL, stat = 2 WHERE TIMESTAMPDIFF(MINUTE, timeselect, NOW()) > 5";
+        $query = "UPDATE rifas SET timeselect = NULL, stat = 2 WHERE TIMESTAMPDIFF(MINUTE, timeselect, NOW()) > 10";
         $this->connectionDB->enviarConsulta($query);
     }
 
@@ -33,11 +33,18 @@ class Rifas {
         return $response;
     }
 
-    // Realiza la compra de una rifa, actualizando los detalles
-    public function buyRifa($number, $fullname, $contact, $email){
+    // Realiza la reserva de una rifa, actualizando los detalles
+    public function reservedRifa($number, $fullname, $contact, $email){
         $dateTime = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
         $timebuy = $dateTime->format("Y-m-d H:i:s");
-        $query = "UPDATE rifas SET stat = 1, timebuy = '$timebuy', fullname = '$fullname', contact = '$contact', email = '$email' WHERE num = $number";
+        $query = "UPDATE rifas SET stat = 4, timebuy = '$timebuy', fullname = '$fullname', contact = '$contact', email = '$email' WHERE num = $number";
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
+    }
+
+    // Realiza la compra de una rifa
+    public function buyRifa($number){
+        $query = "UPDATE rifas SET stat = 1 WHERE num = $number";
         $response = $this->connectionDB->enviarConsulta($query);
         return $response;
     }
