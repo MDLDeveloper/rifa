@@ -6,33 +6,40 @@ class Rifas {
         $this->connectionDB = $connectionDB;
     }
 
-    public function updateStatusRifa(){}
+    // Actualiza las rifas cuya selección es mayor a 5 minutos
+    public function updateStatusRifa(){
+        $query = "UPDATE rifas SET timeselect = NULL, stat = 2 WHERE TIMESTAMPDIFF(MINUTE, timeselect, NOW()) > 5";
+        $this->connectionDB->enviarConsulta($query);
+    }
 
+    // Obtiene todas las rifas, actualizando los estados antes
     public function getRifas(){
         $this->updateStatusRifa();
         $query = "SELECT * FROM rifas";
-        $responce = $this->connectionDB->enviarConsulta($query);
-        return $responce;
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
     }
 
+    // Cambia el estado de una rifa específica
     public function changeStatusRifa($number, $status){
         if($status == 2){
-            $query = "UPDATE rifas SET stat  = $status, timeselect = null WHERE num = $number";
-        }else if($status == 3){
+            $query = "UPDATE rifas SET stat = $status, timeselect = NULL WHERE num = $number";
+        } elseif($status == 3) {
             $dateTime = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
-            $timeselect = $dateTime->format("d-m-Y H:i:s");
-            $query = "UPDATE rifas SET stat  = $status, timeselect = $timeselect WHERE num = $number";
+            $timeselect = $dateTime->format("Y-m-d H:i:s");
+            $query = "UPDATE rifas SET stat = $status, timeselect = '$timeselect' WHERE num = $number";
         }
-        $reponce = $this->connectionDB->enviarConsulta($query);
-        return $reponce;
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
     }
 
-    public function buyRifa($number, $fullname, $contact){
+    // Realiza la compra de una rifa, actualizando los detalles
+    public function buyRifa($number, $fullname, $contact, $email){
         $dateTime = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
-        $timebuy = $dateTime->format("d-m-Y H:i:s");
-        $query = "UPDATE rifas SET stat = 1, timebuy = $timebuy, fullname = $fullname, contact = $contact WHERE num = $number";
-        $reponce = $this->connectionDB->enviarConsulta($query);
-        return $reponce;
+        $timebuy = $dateTime->format("Y-m-d H:i:s");
+        $query = "UPDATE rifas SET stat = 1, timebuy = '$timebuy', fullname = '$fullname', contact = '$contact', email = '$email' WHERE num = $number";
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
     }
 }
 ?>

@@ -1,5 +1,5 @@
 
-const URL_CHARGE_RIFA = "rifas.json"; 
+const URL_CHARGE_RIFA = "back/getrifas.php"; 
 const URL_SELECTION_RIFA = "back/change_status.php";
 
 const chargeList = () => {
@@ -11,16 +11,16 @@ const chargeList = () => {
 chargeList();
 
 const chargeRifa = (list) => {
-    const listNumberRifa = list.listnumbers;
+    const listNumberRifa = list;
     const contentRifa = document.getElementById("content-rifa");
     listNumberRifa.forEach(element => {
         const btnNumber = document.createElement('button');
-        btnNumber.textContent = element.number;
-        btnNumber.value = element.number;
-        if(element.status === "available"){
+        btnNumber.textContent = element.num;
+        btnNumber.value = element.num;
+        if(element.stat === "available"){
             btnNumber.classList = " btn-number available";
-            btnNumber.addEventListener('click', ()=> selectRifa(element.number));
-        }else if(element.status === "reserved"){
+            btnNumber.addEventListener('click', ()=> selectRifa(element.num));
+        }else if(element.stat === "reserved"){
             btnNumber.classList = "btn-number reserved";
         }else{
             btnNumber.classList = "btn-number not-available"
@@ -35,11 +35,11 @@ const selectRifa = (btnValue) => {
     if(btnNumber.classList.contains("available")){ 
         btnNumber.classList.remove("available");
         btnNumber.classList.add("selected");
-        sendTheSelection(btnNumber.number, true);
+        sendTheSelection(btnNumber.value, true);
     }else{
         btnNumber.classList.remove('selected');
         btnNumber.classList.add('available')
-        sendTheSelection(btnNumber.number, false);
+        sendTheSelection(btnNumber.value, false);
     }
 }
 
@@ -55,7 +55,7 @@ const sendTheSelection = (btnNumber, stads) => {
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
+    .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.error(error))
 }

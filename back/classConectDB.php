@@ -3,8 +3,8 @@ class ConnectDB {
 	private $conexion;
 	public $error;
 
-	function __construct($servidor, $usuario, $clave, $base) {
-		if(!$this->_connect($servidor, $usuario, $clave, $base)) {
+	function __construct($servidor, $usuario, $clave, $base, $port) {
+		if(!$this->_connect($servidor, $usuario, $clave, $base, $port)) {
 			$this->error = $this->conexion->connect_error;
 		}
 	}
@@ -13,8 +13,8 @@ class ConnectDB {
 		$this->conexion->close();
 	}
 
-	private function _connect($servidor, $usuario, $clave, $base) {
-		$this->conexion = new mysqli($servidor, $usuario, $clave, $base);
+	private function _connect($servidor, $usuario, $clave, $base, $port) {
+		$this->conexion = new mysqli($servidor, $usuario, $clave, $base, $port);
 			if(!$this->conexion->connect_errno) {
 				$this->error = $this->conexion->connect_error;
 				return false;
