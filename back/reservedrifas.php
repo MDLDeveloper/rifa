@@ -11,16 +11,22 @@ $fullname = $data->fullname;
 $contact = $data->numtel;
 $email = $data->email;
 
-// Realizar la compra
-$responce = $rifas->reservedRifa($num, $fullname, $contact, $email);
-
-// Verificar el resultado de la compra
-if($responce === 0){
-    echo json_encode(["error" => "No se pudo realizar la compra de ningun numero"]);
-} else if($responce === false){
-    echo json_encode(["error" => "Error al intentar realizar la compra"]);
-} else {
-    echo json_encode(["successful" => "Se realizó la compra de " . $responce . " rifas."]);
+if(is_array($num) && !empty($num)){
+    if($rifas->verificarRifas($num)){
+        $responce = [];
+        foreach($num as $rifa){
+            $responce []= $rifas->reservedRifa($rifa, $fullname, $contact, $email);
+        }
+        if(count($responce) === 0){
+            echo json_encode(["error" => "Error al intentar realizar la reserva: No se pudo efectuar cambios"]);
+        }else{
+            echo json_encode(["successful" => "Se realizó la reserva de " . count($response) . " rifas."]);
+        }
+        
+    }else{
+        echo json_encode(["error" => "Uno o varios numeros ya se encuentran comprados o reservados."]);
+    }
+}else{
+    echo json_encode(["error" => "Error al intentar realizar la reserva: No es lista o es lista vacia."]);
 }
-
 ?>

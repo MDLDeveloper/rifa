@@ -48,5 +48,12 @@ class Rifas {
         $response = $this->connectionDB->enviarConsulta($query);
         return $response;
     }
+
+    public function verificarRifas($numbers){
+        $numbersList = implode(',', $numbers);
+        $query = "SELECT num FROM rifas WHERE num IN ($numbersList) AND stat IN (1, 4)";
+        $response = $this->connectionDB->enviarConsulta($query);
+        return empty($response);
+    }
 }
 ?>

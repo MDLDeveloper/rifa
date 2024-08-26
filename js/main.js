@@ -1,6 +1,8 @@
+import {openModalReserverd} from "./modalreserver.js";
 
 const URL_CHARGE_RIFA = "back/getrifas.php"; 
 const URL_SELECTION_RIFA = "back/change_status.php";
+const URL_RESERVED_RIFA = "back/reservedrifas.php";
 
 const chargeList = () => {
     fetch(URL_CHARGE_RIFA)
@@ -8,7 +10,10 @@ const chargeList = () => {
         .then(data => chargeRifa(data))
         .catch(error => console.error(error));
 }
+
 chargeList();
+
+document.getElementById("btnbuy").addEventListener('click', openModalReserverd);
 
 const chargeRifa = (list) => {
     const listNumberRifa = list;
@@ -57,8 +62,9 @@ const sendTheSelection = (btnNumber, stads) => {
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(result => console.log(result))
     .catch(error => console.error(error))
 }
+
 
