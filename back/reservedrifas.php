@@ -20,7 +20,7 @@ if(is_array($num) && !empty($num)){
         if(count($responce) === 0){
             echo json_encode(["error" => "Error al intentar realizar la reserva: No se pudo efectuar cambios"]);
         }else{
-            echo json_encode(["successful" => "Se realizó la reserva de " . count($response) . " rifas."]);
+            echo json_encode(["successful" => "Se realizó la reserva de " . count($responce) . " rifas."]);
         }
         
     }else{

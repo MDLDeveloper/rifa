@@ -2,12 +2,15 @@ import {openModalReserverd} from "./modalreserver.js";
 
 const URL_CHARGE_RIFA = "back/getrifas.php"; 
 const URL_SELECTION_RIFA = "back/change_status.php";
-const URL_RESERVED_RIFA = "back/reservedrifas.php";
+
 
 const chargeList = () => {
     fetch(URL_CHARGE_RIFA)
         .then(response => response.json())
-        .then(data => chargeRifa(data))
+        .then(data => 
+            chargeRifa(data),
+            
+        )
         .catch(error => console.error(error));
 }
 

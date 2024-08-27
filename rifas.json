@@ -1,800 +1,800 @@
 {
     "listnumbers": [
         {
-            "number": 1,
-            "status": "available",
+            "num": 1,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 2,
-            "status": "available",
+            "num": 2,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 3,
-            "status": "notavailable",
+            "num": 3,
+            "stat": "notavailable",
             "buyerfullname": "Carlos Martinez",
             "datepurchase": "11-11-2023",
             "timepurchase": "09:25:40",
             "timereserved": null
         },
         {
-            "number": 4,
-            "status": "available",
+            "num": 4,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 5,
-            "status": "available",
+            "num": 5,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 6,
-            "status": "notavailable",
+            "num": 6,
+            "stat": "notavailable",
             "buyerfullname": "Laura Gomez",
             "datepurchase": "12-11-2023",
             "timepurchase": "14:14:32",
             "timereserved": null
         },
         {
-            "number": 7,
-            "status": "available",
+            "num": 7,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 8,
-            "status": "available",
+            "num": 8,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 9,
-            "status": "notavailable",
+            "num": 9,
+            "stat": "notavailable",
             "buyerfullname": "Laura Gomez",
             "datepurchase": "12-11-2023",
             "timepurchase": "14:14:32",
             "timereserved": null
         },
         {
-            "number": 10,
-            "status": "available",
+            "num": 10,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 11,
-            "status": "available",
+            "num": 11,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 12,
-            "status": "reserved",
+            "num": 12,
+            "stat": "reserved",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": "14:45:22"
         },
         {
-            "number": 13,
-            "status": "available",
+            "num": 13,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 14,
-            "status": "available",
+            "num": 14,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 15,
-            "status": "available",
+            "num": 15,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 16,
-            "status": "notavailable",
+            "num": 16,
+            "stat": "notavailable",
             "buyerfullname": "Laura Gomez",
             "datepurchase": "13-11-2023",
             "timepurchase": "12:14:32",
             "timereserved": null
         },
         {
-            "number": 17,
-            "status": "available",
+            "num": 17,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 18,
-            "status": "notavailable",
+            "num": 18,
+            "stat": "notavailable",
             "buyerfullname": "Diego Fernandez",
             "datepurchase": "14-11-2023",
             "timepurchase": "16:25:40",
             "timereserved": null
         },
         {
-            "number": 19,
-            "status": "available",
+            "num": 19,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 20,
-            "status": "available",
+            "num": 20,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 21,
-            "status": "available",
+            "num": 21,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 22,
-            "status": "available",
+            "num": 22,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 23,
-            "status": "notavailable",
+            "num": 23,
+            "stat": "notavailable",
             "buyerfullname": "Silvia Miranda",
             "datepurchase": "15-11-2023",
             "timepurchase": "13:10:20",
             "timereserved": null
         },
         {
-            "number": 24,
-            "status": "available",
+            "num": 24,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 25,
-            "status": "available",
+            "num": 25,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 26,
-            "status": "available",
+            "num": 26,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 27,
-            "status": "available",
+            "num": 27,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 28,
-            "status": "available",
+            "num": 28,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 29,
-            "status": "available",
+            "num": 29,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 30,
-            "status": "available",
+            "num": 30,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 31,
-            "status": "available",
+            "num": 31,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 32,
-            "status": "available",
+            "num": 32,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 33,
-            "status": "notavailable",
+            "num": 33,
+            "stat": "notavailable",
             "buyerfullname": "Beatriz Flores",
             "datepurchase": "16-11-2023",
             "timepurchase": "12:14:32",
             "timereserved": null
         },
         {
-            "number": 34,
-            "status": "available",
+            "num": 34,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 35,
-            "status": "available",
+            "num": 35,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 36,
-            "status": "available",
+            "num": 36,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 37,
-            "status": "available",
+            "num": 37,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 38,
-            "status": "available",
+            "num": 38,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 39,
-            "status": "notavailable",
+            "num": 39,
+            "stat": "notavailable",
             "buyerfullname": "Miguel Benitez",
             "datepurchase": "17-11-2023",
             "timepurchase": "10:11:20",
             "timereserved": null
         },
         {
-            "number": 40,
-            "status": "available",
+            "num": 40,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 41,
-            "status": "available",
+            "num": 41,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 42,
-            "status": "available",
+            "num": 42,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 43,
-            "status": "available",
+            "num": 43,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 44,
-            "status": "available",
+            "num": 44,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 45,
-            "status": "notavailable",
+            "num": 45,
+            "stat": "notavailable",
             "buyerfullname": "Patricia Lopez",
             "datepurchase": "18-11-2023",
             "timepurchase": "09:25:40",
             "timereserved": null
         },
         {
-            "number": 46,
-            "status": "available",
+            "num": 46,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 47,
-            "status": "available",
+            "num": 47,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 48,
-            "status": "available",
+            "num": 48,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 49,
-            "status": "available",
+            "num": 49,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 50,
-            "status": "available",
+            "num": 50,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 51,
-            "status": "available",
+            "num": 51,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 52,
-            "status": "available",
+            "num": 52,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 53,
-            "status": "available",
+            "num": 53,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 54,
-            "status": "notavailable",
+            "num": 54,
+            "stat": "notavailable",
             "buyerfullname": "Jorge Ramirez",
             "datepurchase": "19-11-2023",
             "timepurchase": "16:30:40",
             "timereserved": null
         },
         {
-            "number": 55,
-            "status": "available",
+            "num": 55,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 56,
-            "status": "available",
+            "num": 56,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 57,
-            "status": "available",
+            "num": 57,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 58,
-            "status": "available",
+            "num": 58,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 59,
-            "status": "available",
+            "num": 59,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 60,
-            "status": "available",
+            "num": 60,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 61,
-            "status": "available",
+            "num": 61,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 62,
-            "status": "available",
+            "num": 62,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 63,
-            "status": "notavailable",
+            "num": 63,
+            "stat": "notavailable",
             "buyerfullname": "Jose Hernandez",
             "datepurchase": "20-11-2023",
             "timepurchase": "14:25:40",
             "timereserved": null
         },
         {
-            "number": 64,
-            "status": "available",
+            "num": 64,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 65,
-            "status": "available",
+            "num": 65,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 66,
-            "status": "available",
+            "num": 66,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 67,
-            "status": "available",
+            "num": 67,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 68,
-            "status": "available",
+            "num": 68,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 69,
-            "status": "available",
+            "num": 69,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 70,
-            "status": "notavailable",
+            "num": 70,
+            "stat": "notavailable",
             "buyerfullname": "Mariana Perez",
             "datepurchase": "21-11-2023",
             "timepurchase": "11:35:45",
             "timereserved": null
         },
         {
-            "number": 71,
-            "status": "available",
+            "num": 71,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 72,
-            "status": "available",
+            "num": 72,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 73,
-            "status": "available",
+            "num": 73,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 74,
-            "status": "available",
+            "num": 74,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 75,
-            "status": "available",
+            "num": 75,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 76,
-            "status": "available",
+            "num": 76,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 77,
-            "status": "available",
+            "num": 77,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 78,
-            "status": "available",
+            "num": 78,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 79,
-            "status": "available",
+            "num": 79,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 80,
-            "status": "available",
+            "num": 80,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 81,
-            "status": "available",
+            "num": 81,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 82,
-            "status": "notavailable",
+            "num": 82,
+            "stat": "notavailable",
             "buyerfullname": "David Morales",
             "datepurchase": "22-11-2023",
             "timepurchase": "15:10:40",
             "timereserved": null
         },
         {
-            "number": 83,
-            "status": "available",
+            "num": 83,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 84,
-            "status": "available",
+            "num": 84,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 85,
-            "status": "available",
+            "num": 85,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 86,
-            "status": "available",
+            "num": 86,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 87,
-            "status": "available",
+            "num": 87,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 88,
-            "status": "available",
+            "num": 88,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 89,
-            "status": "available",
+            "num": 89,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 90,
-            "status": "notavailable",
+            "num": 90,
+            "stat": "notavailable",
             "buyerfullname": "Laura Ruiz",
             "datepurchase": "23-11-2023",
             "timepurchase": "18:45:40",
             "timereserved": null
         },
         {
-            "number": 91,
-            "status": "available",
+            "num": 91,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 92,
-            "status": "available",
+            "num": 92,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 93,
-            "status": "available",
+            "num": 93,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 94,
-            "status": "available",
+            "num": 94,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 95,
-            "status": "available",
+            "num": 95,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 96,
-            "status": "available",
+            "num": 96,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 97,
-            "status": "notavailable",
+            "num": 97,
+            "stat": "notavailable",
             "buyerfullname": "Andrea Gonzalez",
             "datepurchase": "24-11-2023",
             "timepurchase": "13:25:40",
             "timereserved": null
         },
         {
-            "number": 98,
-            "status": "available",
+            "num": 98,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 99,
-            "status": "available",
+            "num": 99,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
             "timereserved": null
         },
         {
-            "number": 100,
-            "status": "available",
+            "num": 100,
+            "stat": "available",
             "buyerfullname": null,
             "datepurchase": null,
             "timepurchase": null,
