@@ -1,6 +1,7 @@
 <?php 
 header('Content-Type: application/json');
 include("recursos.php");
+include("sendwhastappaler.php");
 
 // Decodificar el JSON recibido
 $data = json_decode(file_get_contents("php://input"));
@@ -21,6 +22,7 @@ if(is_array($num) && !empty($num)){
             echo json_encode(["error" => "Error al intentar realizar la reserva: No se pudo efectuar cambios"]);
         }else{
             echo json_encode(["successful" => "Se realizó la reserva de " . count($responce) . " rifas."]);
+            enviarMensajeWhatsapp($num, $fullname, $contact, $email);
         }
         
     }else{
