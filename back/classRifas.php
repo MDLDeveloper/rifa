@@ -37,7 +37,7 @@ class Rifas {
     public function reservedRifa($number, $fullname, $contact, $email){
         $dateTime = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
         $timebuy = $dateTime->format("Y-m-d H:i:s");
-        $query = "UPDATE rifas SET stat = 4, timebuy = '$timebuy', fullname = '$fullname', contact = '$contact', email = '$email' WHERE num = $number";
+        $query = "UPDATE rifas SET stat = 4, timebuy = '$timebuy', timeselect = NULL, fullname = '$fullname', contact = '$contact', email = '$email' WHERE num = $number";
         $response = $this->connectionDB->enviarConsulta($query);
         return $response;
     }
@@ -54,6 +54,12 @@ class Rifas {
         $query = "SELECT num FROM rifas WHERE num IN ($numbersList) AND stat IN (1, 4)";
         $response = $this->connectionDB->enviarConsulta($query);
         return empty($response);
+    }
+
+    public function confirmarReserva($number){
+        $query = "UPDATE rifas SET stat = 1 WHERE num = $number";
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
     }
 }
 ?>
