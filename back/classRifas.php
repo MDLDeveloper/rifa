@@ -42,6 +42,14 @@ class Rifas {
         return $response;
     }
 
+    public function comprarRifa($number, $fullname, $contact, $email){
+        $dateTime = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
+        $timebuy = $dateTime->format("Y-m-d H:i:s");
+        $query = "UPDATE rifas SET stat = 1, timebuy = '$timebuy', timeselect = NULL, fullname = '$fullname', contact = '$contact', email = '$email' WHERE num = $number";
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
+    }
+
     // Realiza la compra de una rifa
     public function buyRifa($number){
         $query = "UPDATE rifas SET stat = 1 WHERE num = $number";
@@ -58,6 +66,12 @@ class Rifas {
 
     public function confirmarReserva($number){
         $query = "UPDATE rifas SET stat = 1 WHERE num = $number";
+        $response = $this->connectionDB->enviarConsulta($query);
+        return $response;
+    }
+
+    public function cancelarReserva($number){
+        $query = "UPDATE rifas SET stat = 2, timebuy = NULL, timeselect = NULL, fullname = NULL, contact = NULL, email = NULL WHERE num = $number";
         $response = $this->connectionDB->enviarConsulta($query);
         return $response;
     }

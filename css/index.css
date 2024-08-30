@@ -1,28 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logonav{
     width: 100px;
+    margin-left: 50px;
+}
+
+header{
+    width: 100%;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
-    padding-inline: 100px;
     align-items: center;
-    position: fixed;
-    width: 90%;
+    position:fixed;
+    width: 100%;
     background-color: rgba(247,247,247,0.7);
     margin-top: -10px;
+    box-sizing: border-box;
 }
+/* Iconos */
+#homeicon{
+    display: none;
+}
+#rifaicon{
+    display: none;
+}
+#premioicon{
+    display: none;
+}
+#agradeicon{
+    display: none;
+}
+/* Iconos */
 
 nav ul{
     display: flex;
     gap: 15px;
     list-style: none;
-    justify-content: end;
-    margin-right: 25px;
+    justify-content: center;
+    padding: 0px;
+    margin-right: 50px;
 }
 
 .navbtn{
@@ -64,13 +91,14 @@ main{
 
 #home{
     height: 100vh;
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items:center;
-    padding: 30px;
     flex-wrap: wrap-reverse;
     overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 #home img{
@@ -224,6 +252,7 @@ h3{
     justify-content: space-around;
     overflow: hidden;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .gc2{
@@ -331,7 +360,6 @@ footer{
 .iconclosemodal{
     margin: -5px;
 }
-.bodymodal{}
 .textmodal{
     color: #00457E;
     font-size: 1.5em;
@@ -376,3 +404,203 @@ footer{
     background-color: #00457e17;
 }
 
+@media (max-width: 1244px) { 
+    .imggirf {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+    .textgirf{
+        width: 58%;
+        padding-inline: 5px;
+    }    
+ }
+
+@media (max-width: 1187px){
+    #home img{
+        width: 325px;
+    }
+    
+    #home article{
+        width: 60%;
+    }
+ }
+
+@media (max-width: 1015px) { 
+    .imggirf {
+        width: 300px;
+        height: 300px;
+    }
+    .textgirf{
+        width: 90%;
+        padding-inline: 5px;
+    }
+    .textgirf p{
+        margin-top: -20px;
+    }
+    #home article{
+        width: 60%;
+    }
+    .infobtn{
+        width: 90%;
+    }
+ }
+@media (max-width: 995px){
+    #home {
+        height: auto;
+        margin-top: 75px;
+    }  
+    #home article{
+        width: 100%;
+    }
+    .logonav{
+        width: 80px;
+    }
+    
+    nav{
+        justify-content: space-between;
+        width:100%;   
+    }
+}
+@media (max-width: 847px){
+    .countdown{
+        font-size: 4.1em;
+    }    
+    .esthetichouse-ty{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .ty{
+        width: 95%;
+        font-size: 1.3em;
+    }
+  
+}
+
+@media (max-width: 714px){
+    .gicard{
+        width: 97%;
+        padding-block: 20px;
+    }
+    .countdown{
+        font-size: 3.5em;
+        padding: 23px;
+    }
+
+    .logonav{
+        width: 65px;
+    }
+}
+
+@media (max-width: 610px){
+    .infobtn{
+        width: 95%;   
+        font-size: 1.3em;    
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    .home-subtitle{
+        font-size: 1.9em;
+    }
+    .countdown{
+        font-size: 3em;
+        padding: 12px;
+    }
+    .logonav{
+        width: 60px;
+        margin-left: 20px;
+    }
+
+    #homeicon{
+        display: block;
+    }
+    #hometext{
+        display: none;
+    }
+    #rifatext{
+        display: none;
+    }
+    #rifaicon{
+        display: block;
+    }
+    #agradeicon{
+        display: block;
+    }
+    #agradetext{
+        display: none;
+    }
+    #premioicon{
+        display: block;
+    }
+    #premiotext{
+        display: none;
+    }
+
+
+    nav{
+        justify-content: space-between;
+        padding: 0px;
+    }
+}  
+@media (max-width: 512px){
+    h1{
+        font-size: 2em;
+    }
+    .home-subtitle{
+        font-size: 1.5em;
+    }
+    .countdown{
+        font-size: 2.7em;
+        padding: 12px;
+    }
+    .logonav{
+        width: 55px;
+        margin-left: 5px;
+    }
+    .modalwindow{
+        width: 80%;
+    }
+
+    
+}
+@media (max-width: 466px){
+    .imggirf {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .textgirf p{
+        font-size: 1.3em;
+    }
+
+    .countdown{
+        font-size: 2.1em;
+        padding: 12px;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.7em;
+    }
+    h3{
+        font-size: 1.4em;
+    }
+
+}
+@media (max-width: 400px){
+
+    .countdown{
+        font-size: 1.5em;
+        padding: 10px;
+    }
+    nav ul{
+        margin-right: 15px;
+    }
+}
+
+ 
+ 
