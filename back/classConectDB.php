@@ -26,6 +26,7 @@ class ConnectDB {
     }
 	
 	public function enviarConsulta($query) {
+		$this->logQuery($query);
 		$tipo = strtoupper(substr($query, 0,6));
 
 		switch($tipo) {
@@ -65,6 +66,14 @@ class ConnectDB {
 				break;
 		}
 
+	}
+	private function logQuery($query) {
+		$logfile = 'logs.txt';
+		$currentDate = date('Y-m-d H:i:s');
+		$logEntry = $currentDate . " - " . $query . "\n";
+
+		// Escribir la consulta en el archivo logs.txt
+		file_put_contents($logfile, $logEntry, FILE_APPEND | LOCK_EX);
 	}
 }
 ?>

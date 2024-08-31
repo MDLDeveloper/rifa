@@ -8,7 +8,8 @@ class Rifas {
 
     // Actualiza las rifas cuya selección es mayor a 5 minutos
     public function updateStatusRifa(){
-        $query = "UPDATE rifas SET timeselect = NULL, stat = 2 WHERE TIMESTAMPDIFF(MINUTE, timeselect, NOW()) > 10";
+        $dateTime = new DateTime('now', new DateTimeZone('America/Argentina/Buenos_Aires'));
+        $query = "UPDATE rifas SET timeselect = NULL, stat = 2 WHERE TIMESTAMPDIFF(MINUTE, timeselect, '".$dateTime->format("Y-m-d H:i:s")."') > 10";
         $this->connectionDB->enviarConsulta($query);
     }
 
