@@ -52,7 +52,7 @@ export function openModalReserverd(){
                                 <input type="email" id="email" name="email">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Teléfono o Celular:</label>
+                                <label for="phone">Numero de Cel (Sin 0 y sin 15):</label>
                                 <input type="tel" id="phone" name="phone" required>
                             </div>
                             <div class="footermodal">

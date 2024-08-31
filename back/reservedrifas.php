@@ -22,7 +22,7 @@ if(is_array($num) && !empty($num)){
             echo json_encode(["error" => "Error al intentar realizar la reserva: No se pudo efectuar cambios"]);
         }else{
             echo json_encode(["successful" => "Se realizó la reserva de " . count($responce) . " rifas."]);
-            //enviarMensajeWhatsapp($num, $fullname, $contact, $email);
+            enviarMensajeWhatsapp($num, $fullname, $contact, $email);
         }
         
     }else{
