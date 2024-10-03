@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorteo - GiftCard Primer Premio</title>
+    <style>
+        #gifcard-context {
+          /* Ajusta la altura según lo necesites */
+          width: 100%; 
+          height: 100%; 
+
+          /* Imágenes de fondo */
+          background-image: url('../assets/img/bot-giftcard.jpg'), url('../assets/img/top-giftcard.jpg');
+          /* Posiciones de las imágenes */
+          background-position: left bottom, right top;
+
+          /* Tamaño de las imágenes (auto permite mantener el tamaño original) */
+          background-size: 50% 35%, 50% 35%;
+
+          /* No repetir las imágenes */
+          background-repeat: no-repeat, no-repeat;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body class="d-flex bg-danger-subtle  vw-100 vh-100 justify-content-center align-items-center">
+
+    <!-- iNICIO DE GIFT CARD -->
+    <div id="giftcard-container" >
+        <div id="giftcard-content" class="rounded-4 border border-secondary shadow-lg" style="background-color: #E2D7E5; width: 310px; height: 550px;">
+            <div id="gifcard-context" style="color: #4c3652; text-transform: uppercase;" class="rounded-4 border">
+                <div style="margin: 7px; width: 100px; padding: 10px; background-color: white; border-radius: 50%;">
+                    <img style="border-radius: 25%;" src="../assets/img/esthetichouse.jpeg" alt="Logo de Esthetic House" class="img-fluid">
+                </div>
+                <div class="d-flex flex-column justify-content-center text-center w-100">
+
+                  <svg width="210" height="80" style="margin: -15 auto;" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Define a longer path for the text -->
+                    <path id="curve" d="M0,50 Q100,10 200,50" fill="transparent"/>
+                    
+                    <!-- Text along the curve with specified color -->
+                    <text fill="#4c3652" font-size="22" font-family="Arial">
+                      <textPath href="#curve">
+                        ¡TE GANASTE UNA!
+                      </textPath>
+                    </text>
+                  </svg>
+
+                    <h2 class="fw-bold" style="font-family: Papyrus;">Gift Card</h2>
+                    <div class="fw-bold p-4 mt-1">
+                        <p class="fw-bold">Vale por: <span class="fw-normal">Esmaltado Semi</span></p>
+                        <p>De parte de: ______________________</p>
+                        <p class="fw-normal ms-4">Válido Hasta: <strong>31/10/2024</strong></p>
+                    </div>
+                </div>
+                <div style="width: 130px; float: right; margin: 0px 20px 0px 0px; margin-top: -10px;">
+                    <img src="../assets/img/gc2.png" alt="QR de la Gift Card" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIN DE GIFT CARD-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
