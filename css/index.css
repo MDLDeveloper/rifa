@@ -42,6 +42,42 @@ nav{
     display: none;
 }
 /* Iconos */
+/* Table */
+.table {
+
+  width: 90%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.table .cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.table .header {
+  background-color: #00457E;
+  font-weight: bold;
+}
+
+.table .header .cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #00457E;
+  color: #F7F7F7;
+}
+
+    /* Table */
 
 nav ul{
     display: flex;

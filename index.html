@@ -57,7 +57,7 @@
         </div>
       <script>
           // Establece la fecha y hora a la que finalizará la cuenta regresiva
-          const endTime = new Date("October 4, 2024 18:00:00").getTime();
+          const endTime = new Date("October 4, 2024 16:00:00").getTime();
   
           // Actualiza la cuenta regresiva cada segundo
           const countdownInterval = setInterval(() => {
@@ -83,10 +83,54 @@
               // Si la cuenta regresiva ha terminado, detiene el intervalo y muestra un mensaje
               if (timeRemaining < 0) {
                   clearInterval(countdownInterval);
-                  document.getElementById("countdown").innerHTML = "¡La cuenta regresiva ha terminado!";
+                  document.getElementById("countdown").innerHTML = '<h3 style="text-align: center; margin: 0px;">¡La cuenta regresiva ha terminado!<h3><p style="font-size: 20px;">En unos minutos se subira el video con el resultado del sorteo.<p>';
               }
           }, 1000);
       </script>
+        
+        <!-- Table -->
+        <div class="table">
+
+          <div class="row header">
+            <div class="cell">
+              Premio
+            </div>
+            <div class="cell">
+              Ganador
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cell">
+              GF Masajes C/Completo
+            </div>
+            <div class="cell" >
+              <strong style="color: #00457E;">No definido </strong>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cell">
+              GF SemiPermanente
+            </div>
+            <div class="cell" style="color: #00457E;" >
+              <strong style="color: #00457E;">No definido </strong>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="cell">
+              Premio sorpresa
+            </div>
+            <div class="cell">
+              <strong style="color: #00457E;">No definido </strong>
+            </div>
+          </div>
+          
+
+        </div>
+        <!-- Fin de Table -->
+        
         <h2>¡Números de la rifa!</h2>
         <p class="infobtn">Los números en color <strong class="descbtn" style="background-color: #98db9b;">Verde</strong> están disponibles para ser comprados, los números en <strong class="descbtn" style="background-color: #eba1a1;">Rojo</strong> son los que ya fueron comprados, los que están en <strong class="descbtn" style="background-color: #9cbdfa;">Celeste</strong> están seleccionados por otra persona (si en 10 minutos no se realiza la reserva volverán a estar disponibles), los que están <strong class="descbtn" style="background-color: #EBFF7A;">Amarillo</strong> son los que usted selecciono y los que están en <strong class="descbtn" style="background-color: #ac659cb9;">Violeta</strong> son los reservados que se encuentran pendientes de aprobación (si no se verifica la compra de los mismos se vuelven a poner en disponible).</p>
         <article id="content-rifa" class="content-rifa">
